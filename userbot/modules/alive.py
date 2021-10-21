@@ -4,7 +4,7 @@ from telethon import version
 from userbot import (HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HELP, BOTLOG, BOTLOG_CHATID, JAVES_NAME, ALIVE_NAME, YOUR_SHORT_NAME)
 from userbot.events import javes05, rekcah05 
 import os
-shivam = os.environ.get("ALIVE_PIC","https://telegra.ph/file/8a3ab7aa9d71c29aae187.mp4")
+shivam = os.environ.get("ALIVE_PIC","https://telegra.ph/file/1aa05b6f356b259e7a0d6.jpg")
 
 import asyncio
 from telethon import events
@@ -120,7 +120,7 @@ if client3:
 @javes05(outgoing=True, pattern="^\.alive$")
 @javes05(outgoing=True, pattern="^\!alive$")
 async def alive(alive):
-    text=("Iam On type` !javes `or` !help `for more info....")
+    text=("Iam On type` !lucy `or` !help `for more info....")
     await alive.client.send_file(alive.chat_id, shivam,caption=text, force_document=False)
     await alive.delete()
 
